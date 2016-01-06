@@ -1,0 +1,25 @@
+{
+  "name": "node-as-build-tool",
+  "version": "1.0.0",
+  "description": "node as a build tool to replace grunt and the like",
+  "main": "app.js",
+  "scripts": {
+    "info": "echo npm as a build tool",
+    "lint": "echo ...linting... && jshint assets/js",
+    "pretest": "npm run lint -s",
+    "test": "echo ...testing... && mocha test/",
+    "minify:js": "echo ...minifying javascript files... && uglifyjs assets/js/app.js -o dist/public/js/app.min.js",
+    "minify:css": "echo ...minifying css files... && cleancss assets/css/main.css -o dist/public/css/main.min.css",
+    "minify": "echo ...minifying everything... && npm run minify:js -s && npm run minify:css -s",
+    "build": "echo ...building... && npm run test -s && npm run minify -s"
+  },
+  "author": "Kyle Hall <hallkd47@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-css": "^3.4.8",
+    "jshint": "^2.8.0",
+    "mocha": "^2.3.4",
+    "uglify-js": "^2.6.1",
+    "watch": "^0.17.1"
+  }
+}
