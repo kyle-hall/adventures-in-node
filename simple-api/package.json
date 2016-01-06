@@ -1,0 +1,17 @@
+{
+  "name": "simple-api",
+  "version": "1.0.0",
+  "description": "a simple api using node and express",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.13.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.2"
+  }
+}
