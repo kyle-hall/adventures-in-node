@@ -1,0 +1,14 @@
+{
+  "name": "node-commandline-app",
+  "version": "1.0.0",
+  "description": "example command line app",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "sayHello": "cli.js"
+  },
+  "author": "kyle hall",
+  "license": "ISC"
+}
