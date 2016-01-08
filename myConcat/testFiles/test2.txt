@@ -1,0 +1,2 @@
+I'm just a simple text file.
+This should be at the end of text2.txt

@@ -1,0 +1,14 @@
+{
+  "name": "myconcat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "myconcat": "app.js"
+  },
+  "author": "kyle hall <hallkd47@gmail.com>",
+  "license": "ISC"
+}
