@@ -9,7 +9,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "body-parser": "^1.14.2",
+    "chai": "^3.4.1",
     "express": "^4.13.3",
-    "express-handlebars": "^2.0.1"
+    "express-handlebars": "^2.0.1",
+    "mocha": "^2.3.4",
+    "nodemon": "^1.8.1"
   }
 }
