@@ -1,13 +1,13 @@
 
-var accountMaker = require("../mocks/mockAccount");
+var accountFactory = require("../mocks/mockAccountFactory");
 
 var appRouter = function (app) {
   app.get("/", function (req, res) {
-    res.send("Hello, world");
+    res.send("Hello, user, trying /account instead");
   });
 
   app.get("/account", function (req, res) {
-    var mockAccount = accountMaker("nraboy", "12343", "@nraboy");
+    var mockAccounts = accountFactory(5);
 
     if (!req.query.username) {
       return res.send({"status": "error", "message": "missing username"});
